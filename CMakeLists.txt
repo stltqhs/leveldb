@@ -513,3 +513,9 @@ if(LEVELDB_INSTALL)
     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/${PROJECT_NAME}"
   )
 endif(LEVELDB_INSTALL)
+
+project(learn01)
+add_executable(learn01
+        "learn/learn01.cpp"
+        )
+target_link_libraries(learn01 leveldb)
